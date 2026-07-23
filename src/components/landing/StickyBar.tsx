@@ -16,7 +16,7 @@ export function StickyBar() {
           aria-label="Instagram"
           className="h-14 w-14 rounded-full bg-gradient-to-br from-[#FF6B00] to-[#E10600] flex items-center justify-center shadow-[0_15px_40px_-10px_rgba(124,92,255,0.8)] hover:scale-110 transition-transform"
         >
-          <Instagram className="h-6 w-6 text-neutral-900" />
+          <Instagram className="h-6 w-6 text-white" />
         </motion.a>
         <motion.a
           initial={{ scale: 0, opacity: 0 }}
@@ -24,7 +24,7 @@ export function StickyBar() {
           transition={{ delay: 1.1, type: "spring", stiffness: 200 }}
           href={`tel:${PHONE}`}
           aria-label="Pozovite"
-          className="h-14 w-14 rounded-full bg-[#FAF7F1] text-black flex items-center justify-center shadow-[0_15px_40px_-10px_rgba(255,255,255,0.5)] hover:scale-110 transition-transform"
+          className="h-14 w-14 rounded-full bg-[#EFEAE2] text-black flex items-center justify-center shadow-[0_15px_40px_-10px_rgba(255,255,255,0.5)] hover:scale-110 transition-transform"
         >
           <Phone className="h-6 w-6" />
         </motion.a>
@@ -47,16 +47,16 @@ export function StickyBar() {
           target="_blank"
           rel="noreferrer"
           aria-label="Instagram"
-          className="h-11 w-11 rounded-xl bg-neutral-900/[0.08] flex items-center justify-center border border-neutral-900/10"
+          className="h-11 w-11 rounded-xl bg-white/[0.08] flex items-center justify-center border border-white/10"
         >
-          <Instagram className="h-5 w-5 text-neutral-900" />
+          <Instagram className="h-5 w-5 text-white" />
         </a>
         <a
           href={`sms:${PHONE}`}
           aria-label="Poruka"
-          className="h-11 w-11 rounded-xl bg-neutral-900/[0.08] flex items-center justify-center border border-neutral-900/10"
+          className="h-11 w-11 rounded-xl bg-white/[0.08] flex items-center justify-center border border-white/10"
         >
-          <MessageCircle className="h-5 w-5 text-neutral-900" />
+          <MessageCircle className="h-5 w-5 text-white" />
         </a>
       </motion.div>
     </>
