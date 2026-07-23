@@ -27,7 +27,7 @@ export function Nav() {
         transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
         className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${
           scrolled
-            ? "backdrop-blur-2xl bg-[#FAF7F1]/80 border-b border-neutral-900/[0.06]"
+            ? "backdrop-blur-2xl bg-[#1c1712]/80 border-b border-white/[0.06]"
             : "bg-transparent"
         }`}
       >
@@ -40,7 +40,7 @@ export function Nav() {
             />
             <div className="leading-tight">
               <div className="font-display text-sm md:text-base font-semibold tracking-tight">DP Poliranje</div>
-              <div className="text-[10px] md:text-[11px] uppercase tracking-[0.2em] text-neutral-900/50">Ruma</div>
+              <div className="text-[10px] md:text-[11px] uppercase tracking-[0.2em] text-white/50">Ruma</div>
             </div>
           </Link>
 
@@ -51,8 +51,8 @@ export function Nav() {
                 key={l.to}
                 to={l.to}
                 activeOptions={{ exact: true }}
-                activeProps={{ className: "text-neutral-900 after:scale-x-100" }}
-                className="text-sm text-neutral-900/70 hover:text-neutral-900 transition relative after:absolute after:left-0 after:right-0 after:-bottom-1 after:h-px after:bg-gradient-to-r after:from-[#FF6B00] after:to-[#E10600] after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform"
+                activeProps={{ className: "text-white after:scale-x-100" }}
+                className="text-sm text-white/70 hover:text-white transition relative after:absolute after:left-0 after:right-0 after:-bottom-1 after:h-px after:bg-gradient-to-r after:from-[#FF6B00] after:to-[#E10600] after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform"
               >
                 {l.label}
               </Link>
@@ -91,7 +91,7 @@ export function Nav() {
                   key={l.to}
                   to={l.to}
                   onClick={() => setOpen(false)}
-                  className="text-lg font-display text-neutral-900/85 hover:text-neutral-900"
+                  className="text-lg font-display text-white/85 hover:text-white"
                 >
                   {l.label}
                 </Link>
