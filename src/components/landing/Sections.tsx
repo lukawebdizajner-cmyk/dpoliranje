@@ -32,7 +32,7 @@ export function GalleryCTA({ variant = "band" }: { variant?: "band" | "inline" }
     return (
       <Link
         to="/galerija"
-        className="inline-flex items-center gap-2 rounded-full glass-panel px-6 py-3.5 text-sm font-medium text-neutral-900 hover:bg-neutral-900/10 transition"
+        className="inline-flex items-center gap-2 rounded-full glass-panel px-6 py-3.5 text-sm font-medium text-white hover:bg-white/10 transition"
       >
         <Images className="h-4 w-4" />
         Pogledaj galeriju
@@ -44,15 +44,15 @@ export function GalleryCTA({ variant = "band" }: { variant?: "band" | "inline" }
     <section className="relative py-14 md:py-20">
       <div className="mx-auto max-w-5xl px-5 md:px-8">
         <Reveal>
-          <div className="relative overflow-hidden rounded-3xl border border-neutral-900/10 bg-gradient-to-br from-[#FF6B00]/20 via-white to-[#E10600]/15 p-8 md:p-12 text-center">
+          <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br from-[#FF6B00]/20 via-[#1c1712] to-[#E10600]/15 p-8 md:p-12 text-center">
             <div className="absolute -top-16 -right-16 h-52 w-52 rounded-full bg-[#FF6B00]/30 blur-3xl" />
             <div className="absolute -bottom-16 -left-16 h-52 w-52 rounded-full bg-[#E10600]/25 blur-3xl" />
             <div className="relative">
-              <div className="text-[11px] uppercase tracking-[0.3em] text-neutral-900/60">Galerija</div>
+              <div className="text-[11px] uppercase tracking-[0.3em] text-white/60">Galerija</div>
               <h3 className="font-display mt-3 text-3xl md:text-4xl font-semibold leading-tight">
                 Pogledajte naše <span className="text-gradient-primary">radove</span>.
               </h3>
-              <p className="mt-3 text-neutral-900/65 max-w-xl mx-auto text-sm md:text-base">
+              <p className="mt-3 text-white/65 max-w-xl mx-auto text-sm md:text-base">
                 Pre i posle fotografije, poliranje, keramička zaštita i dubinsko pranje — sve na jednom mestu.
               </p>
               <div className="mt-6 flex justify-center">
@@ -86,7 +86,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-            className="inline-flex w-fit items-center gap-2 rounded-full glass-panel px-3 py-1.5 text-[11px] uppercase tracking-[0.25em] text-neutral-900/70"
+            className="inline-flex w-fit items-center gap-2 rounded-full glass-panel px-3 py-1.5 text-[11px] uppercase tracking-[0.25em] text-white/70"
           >
             <span className="h-1.5 w-1.5 rounded-full bg-[#E10600] shadow-[0_0_10px_#E10600]" />
             Premium Auto Detailing • Ruma
@@ -105,7 +105,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.25 }}
-            className="mt-6 max-w-xl text-base md:text-lg text-neutral-900/65 leading-relaxed"
+            className="mt-6 max-w-xl text-base md:text-lg text-white/65 leading-relaxed"
           >
             Premium detailing za automobile, kamione, autobuse i motocikle.
             Dubinsko pranje, mašinsko poliranje, keramička zaštita i voskiranje —
@@ -131,14 +131,14 @@ export function Hero() {
               href={INSTAGRAM}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-2 rounded-full glass-panel px-6 py-3.5 text-sm font-medium text-neutral-900 hover:bg-neutral-900/10 transition"
+              className="inline-flex items-center gap-2 rounded-full glass-panel px-6 py-3.5 text-sm font-medium text-white hover:bg-white/10 transition"
             >
               <Instagram className="h-4 w-4" />
               Pogledajte Instagram
             </a>
             <Link
               to="/galerija"
-              className="inline-flex items-center gap-2 rounded-full glass-panel px-6 py-3.5 text-sm font-medium text-neutral-900 hover:bg-neutral-900/10 transition"
+              className="inline-flex items-center gap-2 rounded-full glass-panel px-6 py-3.5 text-sm font-medium text-white hover:bg-white/10 transition"
             >
               <Sparkles className="h-4 w-4" />
               Pogledaj galeriju
@@ -158,7 +158,7 @@ export function Hero() {
             ].map((s) => (
               <div key={s.l}>
                 <div className="font-display text-2xl md:text-3xl font-semibold text-gradient-primary">{s.n}</div>
-                <div className="mt-1 text-[11px] uppercase tracking-widest text-neutral-900/50">{s.l}</div>
+                <div className="mt-1 text-[11px] uppercase tracking-widest text-white/50">{s.l}</div>
               </div>
             ))}
           </motion.div>
@@ -169,14 +169,14 @@ export function Hero() {
             initial={{ opacity: 0, scale: 0.96 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1.1, ease: [0.22, 1, 0.36, 1] }}
-            className="relative aspect-[4/5] w-full overflow-hidden rounded-3xl border border-neutral-900/10 shadow-[0_50px_120px_-20px_rgba(124,92,255,0.5)]"
+            className="relative aspect-[4/5] w-full overflow-hidden rounded-3xl border border-white/10 shadow-[0_50px_120px_-20px_rgba(124,92,255,0.5)]"
           >
             <img src={IMG.polPostA} alt="Poliran automobil sa dubokim sjajem" className="h-full w-full object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
             <div className="absolute inset-x-6 bottom-6 flex items-center justify-between">
               <div className="glass-panel rounded-2xl px-4 py-3">
-                <div className="text-[10px] uppercase tracking-widest text-neutral-900/60">Rezultat</div>
-                <div className="font-display text-lg font-semibold text-neutral-900">Ogledalski sjaj</div>
+                <div className="text-[10px] uppercase tracking-widest text-white/60">Rezultat</div>
+                <div className="font-display text-lg font-semibold text-white">Ogledalski sjaj</div>
               </div>
               <div className="glass-panel h-12 w-12 rounded-full flex items-center justify-center">
                 <Sparkles className="h-5 w-5 text-[#E10600]" />
@@ -187,7 +187,7 @@ export function Hero() {
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, delay: 0.4 }}
-            className="hidden md:block absolute -bottom-8 -left-8 w-48 aspect-square overflow-hidden rounded-2xl border border-neutral-900/10 shadow-2xl"
+            className="hidden md:block absolute -bottom-8 -left-8 w-48 aspect-square overflow-hidden rounded-2xl border border-white/10 shadow-2xl"
           >
             <img src={IMG.cer1} alt="Keramička zaštita" className="h-full w-full object-cover" />
           </motion.div>
@@ -215,11 +215,11 @@ export function Highlights() {
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 md:gap-4">
           {highlights.map((h, i) => (
             <Reveal key={h.t} delay={i * 0.05}>
-              <div className="group glass-panel rounded-2xl p-4 md:p-5 h-full flex flex-col items-start gap-3 hover:bg-neutral-900/[0.06] transition-all hover:-translate-y-1 hover:shadow-[0_20px_50px_-20px_rgba(124,92,255,0.5)]">
-                <div className="h-10 w-10 rounded-xl bg-gradient-to-br from-[#FF6B00]/25 to-[#E10600]/20 border border-neutral-900/10 flex items-center justify-center text-white">
+              <div className="group glass-panel rounded-2xl p-4 md:p-5 h-full flex flex-col items-start gap-3 hover:bg-white/[0.06] transition-all hover:-translate-y-1 hover:shadow-[0_20px_50px_-20px_rgba(124,92,255,0.5)]">
+                <div className="h-10 w-10 rounded-xl bg-gradient-to-br from-[#FF6B00]/25 to-[#E10600]/20 border border-white/10 flex items-center justify-center text-white">
                   <h.icon className="h-5 w-5" />
                 </div>
-                <div className="text-sm md:text-[15px] font-medium text-neutral-900/90 leading-tight">{h.t}</div>
+                <div className="text-sm md:text-[15px] font-medium text-white/90 leading-tight">{h.t}</div>
               </div>
             </Reveal>
           ))}
@@ -244,11 +244,11 @@ export function BeforeAfterSection() {
         <Reveal>
           <div className="mb-10 md:mb-14 flex items-end justify-between gap-6 flex-wrap">
             <div className="max-w-2xl">
-              <div className="text-[11px] uppercase tracking-[0.3em] text-neutral-900/50">Rezultati</div>
+              <div className="text-[11px] uppercase tracking-[0.3em] text-white/50">Rezultati</div>
               <h2 className="font-display mt-3 text-4xl md:text-6xl font-semibold leading-[1.02]">
                 Prava razlika vidi se u <span className="text-gradient-primary">detaljima</span>.
               </h2>
-              <p className="mt-4 text-neutral-900/60 max-w-lg">
+              <p className="mt-4 text-white/60 max-w-lg">
                 Povucite klizač i uverite se kako izgleda posao urađen do savršenstva —
                 bez skraćivanja, bez kompromisa.
               </p>
@@ -260,7 +260,7 @@ export function BeforeAfterSection() {
                   onClick={() => setIdx(i)}
                   aria-label={`Prikaz ${i + 1}`}
                   className={`h-2.5 rounded-full transition-all ${
-                    i === idx ? "w-10 bg-gradient-to-r from-[#FF6B00] to-[#E10600]" : "w-2.5 bg-neutral-900/20 hover:bg-neutral-900/40"
+                    i === idx ? "w-10 bg-gradient-to-r from-[#FF6B00] to-[#E10600]" : "w-2.5 bg-white/20 hover:bg-white/40"
                   }`}
                 />
               ))}
@@ -287,15 +287,15 @@ const services = [
 
 export function Services() {
   return (
-    <section id="usluge" className="relative py-20 md:py-32 border-t border-neutral-900/[0.06]">
+    <section id="usluge" className="relative py-20 md:py-32 border-t border-white/[0.06]">
       <div className="mx-auto max-w-3xl px-5 md:px-8">
         <Reveal>
           <div className="text-center mb-12 md:mb-16">
-            <div className="text-[11px] uppercase tracking-[0.3em] text-neutral-900/50">Usluge</div>
+            <div className="text-[11px] uppercase tracking-[0.3em] text-white/50">Usluge</div>
             <h2 className="font-display mt-3 text-4xl md:text-5xl font-semibold leading-[1.05]">
               Kompletna nega vašeg <span className="text-gradient-primary">vozila</span>.
             </h2>
-            <p className="mt-4 text-neutral-900/60 mx-auto max-w-lg">
+            <p className="mt-4 text-white/60 mx-auto max-w-lg">
               Od dubinskog pranja do keramičke zaštite — sve na jednom mestu, u Rumi.
             </p>
           </div>
@@ -304,15 +304,15 @@ export function Services() {
         <div className="flex flex-col gap-3 md:gap-4">
           {services.map((s, i) => (
             <Reveal key={s.t} delay={(i % 6) * 0.04}>
-              <div className="group relative overflow-hidden rounded-2xl border border-neutral-900/10 bg-[#FAF7F1] transition-all duration-500 hover:border-neutral-900/20 hover:-translate-y-0.5 hover:shadow-[0_20px_50px_-20px_rgba(0,0,0,0.15)]">
+              <div className="group relative overflow-hidden rounded-2xl border border-white/10 bg-[#1c1712] transition-all duration-500 hover:border-white/20 hover:-translate-y-0.5 hover:shadow-[0_20px_50px_-20px_rgba(0,0,0,0.15)]">
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 bg-[radial-gradient(500px_120px_at_50%_50%,rgba(124,92,255,0.15),transparent)]" />
                 <div className="relative flex items-center gap-4 md:gap-5 p-4 md:p-5">
-                  <div className="h-12 w-12 md:h-14 md:w-14 rounded-xl bg-gradient-to-br from-[#FF6B00]/25 to-[#E10600]/15 border border-neutral-900/10 flex items-center justify-center flex-none">
-                    <s.icon className="h-6 w-6 text-neutral-900" />
+                  <div className="h-12 w-12 md:h-14 md:w-14 rounded-xl bg-gradient-to-br from-[#FF6B00]/25 to-[#E10600]/15 border border-white/10 flex items-center justify-center flex-none">
+                    <s.icon className="h-6 w-6 text-white" />
                   </div>
                   <div className="min-w-0">
-                    <div className="font-display text-base md:text-xl font-semibold text-neutral-900">{s.t}</div>
-                    <div className="mt-1 text-xs md:text-sm text-neutral-900/60">{s.d}</div>
+                    <div className="font-display text-base md:text-xl font-semibold text-white">{s.t}</div>
+                    <div className="mt-1 text-xs md:text-sm text-white/60">{s.d}</div>
                   </div>
                 </div>
               </div>
@@ -341,16 +341,16 @@ export function Why() {
     <section className="relative py-20 md:py-32">
       <div className="mx-auto max-w-7xl px-5 md:px-8 grid lg:grid-cols-12 gap-10 lg:gap-16 items-center">
         <Reveal className="lg:col-span-5">
-          <div className="relative aspect-square w-full overflow-hidden rounded-3xl border border-neutral-900/10 shadow-[0_40px_100px_-20px_rgba(124,92,255,0.4)]">
+          <div className="relative aspect-square w-full overflow-hidden rounded-3xl border border-white/10 shadow-[0_40px_100px_-20px_rgba(124,92,255,0.4)]">
             <img src={IMG.cer2} alt="Detailing u studiju" className="h-full w-full object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
             <div className="absolute bottom-6 left-6 right-6 flex items-center gap-3">
               <div className="h-12 w-12 rounded-full bg-gradient-to-br from-[#FF6B00] to-[#E10600] flex items-center justify-center">
-                <Award className="h-5 w-5 text-neutral-900" />
+                <Award className="h-5 w-5 text-white" />
               </div>
               <div>
                 <div className="font-display text-lg font-semibold">Ručna završna obrada</div>
-                <div className="text-xs text-neutral-900/60">Bez skraćivanja, bez kompromisa.</div>
+                <div className="text-xs text-white/60">Bez skraćivanja, bez kompromisa.</div>
               </div>
             </div>
           </div>
@@ -358,7 +358,7 @@ export function Why() {
 
         <div className="lg:col-span-7">
           <Reveal>
-            <div className="text-[11px] uppercase tracking-[0.3em] text-neutral-900/50">Zašto DP</div>
+            <div className="text-[11px] uppercase tracking-[0.3em] text-white/50">Zašto DP</div>
             <h2 className="font-display mt-3 text-4xl md:text-6xl font-semibold leading-[1.02]">
               Standard koji se <span className="text-gradient-primary">oseti</span> u svakom detalju.
             </h2>
@@ -368,7 +368,7 @@ export function Why() {
               <Reveal key={r} delay={i * 0.04}>
                 <li className="flex items-start gap-3 py-2">
                   <CheckCircle2 className="h-5 w-5 mt-0.5 flex-none text-[#E10600]" />
-                  <span className="text-neutral-900/85">{r}</span>
+                  <span className="text-white/85">{r}</span>
                 </li>
               </Reveal>
             ))}
@@ -388,11 +388,11 @@ const vehicles = [
 
 export function Vehicles() {
   return (
-    <section className="relative py-20 md:py-28 border-t border-neutral-900/[0.06]">
+    <section className="relative py-20 md:py-28 border-t border-white/[0.06]">
       <div className="mx-auto max-w-7xl px-5 md:px-8">
         <Reveal>
           <div className="text-center max-w-3xl mx-auto mb-14">
-            <div className="text-[11px] uppercase tracking-[0.3em] text-neutral-900/50">Vozila</div>
+            <div className="text-[11px] uppercase tracking-[0.3em] text-white/50">Vozila</div>
             <h2 className="font-display mt-3 text-4xl md:text-6xl font-semibold leading-[1.02]">
               Radimo <span className="text-gradient-primary">sve tipove</span> vozila.
             </h2>
@@ -403,7 +403,7 @@ export function Vehicles() {
             <Reveal key={v.t} delay={i * 0.06}>
               <div className="group relative aspect-[4/5] overflow-hidden rounded-2xl md:rounded-3xl glass-panel p-6 flex flex-col items-center justify-center gap-4 hover:-translate-y-1 transition-all">
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 bg-[radial-gradient(300px_200px_at_50%_100%,rgba(53,214,255,0.3),transparent)]" />
-                <v.icon className="h-14 w-14 md:h-16 md:w-16 text-neutral-900/85 group-hover:text-neutral-900 group-hover:scale-110 transition-transform" strokeWidth={1.2} />
+                <v.icon className="h-14 w-14 md:h-16 md:w-16 text-white/85 group-hover:text-white group-hover:scale-110 transition-transform" strokeWidth={1.2} />
                 <div className="font-display text-base md:text-lg font-medium text-center">{v.t}</div>
               </div>
             </Reveal>
@@ -430,7 +430,7 @@ export function Process() {
       <div className="mx-auto max-w-6xl px-5 md:px-8">
         <Reveal>
           <div className="max-w-2xl mb-14">
-            <div className="text-[11px] uppercase tracking-[0.3em] text-neutral-900/50">Proces</div>
+            <div className="text-[11px] uppercase tracking-[0.3em] text-white/50">Proces</div>
             <h2 className="font-display mt-3 text-4xl md:text-6xl font-semibold leading-[1.02]">
               Sedam koraka do <span className="text-gradient-primary">savršenog</span> rezultata.
             </h2>
@@ -451,7 +451,7 @@ export function Process() {
                   </div>
                   <div className="flex-1 glass-panel rounded-2xl p-5 md:p-7">
                     <div className="font-display text-xl md:text-2xl font-semibold">{s.t}</div>
-                    <div className="mt-2 text-neutral-900/60 text-sm md:text-base">{s.d}</div>
+                    <div className="mt-2 text-white/60 text-sm md:text-base">{s.d}</div>
                   </div>
                 </div>
               </Reveal>
@@ -474,11 +474,11 @@ const diff = [
 
 export function Difference() {
   return (
-    <section className="relative py-20 md:py-28 border-t border-neutral-900/[0.06]">
+    <section className="relative py-20 md:py-28 border-t border-white/[0.06]">
       <div className="mx-auto max-w-7xl px-5 md:px-8">
         <Reveal>
           <div className="max-w-2xl mb-12">
-            <div className="text-[11px] uppercase tracking-[0.3em] text-neutral-900/50">Premium razlika</div>
+            <div className="text-[11px] uppercase tracking-[0.3em] text-white/50">Premium razlika</div>
             <h2 className="font-display mt-3 text-4xl md:text-6xl font-semibold leading-[1.02]">
               Zašto DP izgleda <span className="text-gradient-primary">drugačije</span>.
             </h2>
@@ -487,10 +487,10 @@ export function Difference() {
         <div className="grid md:grid-cols-3 gap-3 md:gap-5">
           {diff.map((d, i) => (
             <Reveal key={d.t} delay={i * 0.05}>
-              <div className="glass-panel rounded-2xl md:rounded-3xl p-6 md:p-8 h-full hover:bg-neutral-900/[0.05] transition group">
+              <div className="glass-panel rounded-2xl md:rounded-3xl p-6 md:p-8 h-full hover:bg-white/[0.05] transition group">
                 <div className="font-display text-3xl md:text-4xl font-semibold text-gradient-primary mb-3">0{i + 1}</div>
                 <div className="font-display text-xl font-semibold">{d.t}</div>
-                <div className="mt-2 text-neutral-900/60 text-sm">{d.d}</div>
+                <div className="mt-2 text-white/60 text-sm">{d.d}</div>
               </div>
             </Reveal>
           ))}
@@ -537,7 +537,7 @@ export function Gallery() {
         <Reveal>
           <div className="flex flex-wrap items-end justify-between gap-6 mb-10">
             <div className="max-w-xl">
-              <div className="text-[11px] uppercase tracking-[0.3em] text-neutral-900/50">Galerija</div>
+              <div className="text-[11px] uppercase tracking-[0.3em] text-white/50">Galerija</div>
               <h2 className="font-display mt-3 text-4xl md:text-6xl font-semibold leading-[1.02]">
                 Rezultati koji <span className="text-gradient-primary">govore</span>.
               </h2>
@@ -549,8 +549,8 @@ export function Gallery() {
                   onClick={() => setCat(c)}
                   className={`px-3.5 py-1.5 rounded-full text-xs md:text-sm border transition ${
                     cat === c
-                      ? "bg-[#FAF7F1] text-black border-[#FAF7F1]"
-                      : "border-neutral-900/15 text-neutral-900/70 hover:text-neutral-900 hover:border-neutral-900/30"
+                      ? "bg-white text-black border-white"
+                      : "border-white/15 text-white/70 hover:text-white hover:border-white/30"
                   }`}
                 >
                   {c}
@@ -570,12 +570,12 @@ export function Gallery() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: (i % 8) * 0.04 }}
               onClick={() => setOpen(it.src)}
-              className={`group relative overflow-hidden rounded-2xl border border-neutral-900/10 bg-[#FAF7F1] ${it.span ?? ""}`}
+              className={`group relative overflow-hidden rounded-2xl border border-white/10 bg-[#1c1712] ${it.span ?? ""}`}
             >
               <img src={it.src} alt={it.cat} loading="lazy" className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent opacity-0 group-hover:opacity-100 transition" />
               <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition">
-                <span className="text-[11px] uppercase tracking-widest text-neutral-900/85">{it.cat}</span>
+                <span className="text-[11px] uppercase tracking-widest text-white/85">{it.cat}</span>
                 <span className="h-8 w-8 rounded-full glass-panel flex items-center justify-center">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M15 3h6v6" /><path d="M10 14L21 3" /><path d="M18 13v7H3V3h7" /></svg>
                 </span>
@@ -592,7 +592,7 @@ export function Gallery() {
 export function InstagramSection() {
   const previews = [IMG.polPostA, IMG.cer1, IMG.dpPostB, IMG.pol3, IMG.cer2, IMG.polPostD];
   return (
-    <section className="relative py-20 md:py-28 border-t border-neutral-900/[0.06]">
+    <section className="relative py-20 md:py-28 border-t border-white/[0.06]">
       <div className="mx-auto max-w-7xl px-5 md:px-8 grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
         <Reveal>
           <div className="grid grid-cols-3 gap-2 md:gap-3">
@@ -602,13 +602,13 @@ export function InstagramSection() {
                 href={INSTAGRAM}
                 target="_blank"
                 rel="noreferrer"
-                className={`group relative overflow-hidden rounded-xl md:rounded-2xl border border-neutral-900/10 ${
+                className={`group relative overflow-hidden rounded-xl md:rounded-2xl border border-white/10 ${
                   i === 0 ? "col-span-2 row-span-2" : "aspect-square"
                 }`}
               >
                 <img src={p} alt="Instagram post" loading="lazy" className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent opacity-0 group-hover:opacity-100 transition flex items-end justify-center pb-3">
-                  <Instagram className="h-6 w-6 text-neutral-900" />
+                  <Instagram className="h-6 w-6 text-white" />
                 </div>
               </a>
             ))}
@@ -616,11 +616,11 @@ export function InstagramSection() {
         </Reveal>
         <div>
           <Reveal>
-            <div className="text-[11px] uppercase tracking-[0.3em] text-neutral-900/50">Instagram</div>
+            <div className="text-[11px] uppercase tracking-[0.3em] text-white/50">Instagram</div>
             <h2 className="font-display mt-3 text-4xl md:text-6xl font-semibold leading-[1.02]">
               Pratite naše <span className="text-gradient-primary">radove</span>.
             </h2>
-            <p className="mt-4 text-neutral-900/60 max-w-md">
+            <p className="mt-4 text-white/60 max-w-md">
               Svakodnevno objavljujemo nove transformacije, rezultate poliranja i
               zaštićene lakove. Uverite se sami.
             </p>
@@ -653,7 +653,7 @@ export function Testimonials() {
       <div className="mx-auto max-w-7xl px-5 md:px-8">
         <Reveal>
           <div className="max-w-2xl mb-12">
-            <div className="text-[11px] uppercase tracking-[0.3em] text-neutral-900/50">Utisci klijenata</div>
+            <div className="text-[11px] uppercase tracking-[0.3em] text-white/50">Utisci klijenata</div>
             <h2 className="font-display mt-3 text-4xl md:text-6xl font-semibold leading-[1.02]">
               Poverenje se <span className="text-gradient-primary">zaslužuje</span>.
             </h2>
@@ -669,11 +669,11 @@ export function Testimonials() {
                       <Star key={j} className="h-4 w-4 fill-[#E10600] text-[#E10600]" />
                     ))}
                   </div>
-                  <p className="text-neutral-900/85 text-[15px] leading-relaxed">&ldquo;{t.text}&rdquo;</p>
+                  <p className="text-white/85 text-[15px] leading-relaxed">&ldquo;{t.text}&rdquo;</p>
                 </div>
-                <div className="mt-6 pt-4 border-t border-neutral-900/10">
+                <div className="mt-6 pt-4 border-t border-white/10">
                   <div className="font-display font-semibold">{t.name}</div>
-                  <div className="text-xs text-neutral-900/50">{t.city}</div>
+                  <div className="text-xs text-white/50">{t.city}</div>
                 </div>
               </div>
             </Reveal>
@@ -699,11 +699,11 @@ const faqs = [
 export function FAQ() {
   const [open, setOpen] = useState<number | null>(0);
   return (
-    <section id="faq" className="relative py-20 md:py-32 border-t border-neutral-900/[0.06]">
+    <section id="faq" className="relative py-20 md:py-32 border-t border-white/[0.06]">
       <div className="mx-auto max-w-4xl px-5 md:px-8">
         <Reveal>
           <div className="text-center mb-14">
-            <div className="text-[11px] uppercase tracking-[0.3em] text-neutral-900/50">Česta pitanja</div>
+            <div className="text-[11px] uppercase tracking-[0.3em] text-white/50">Česta pitanja</div>
             <h2 className="font-display mt-3 text-4xl md:text-6xl font-semibold leading-[1.02]">
               Odgovori na sve što vas <span className="text-gradient-primary">zanima</span>.
             </h2>
@@ -720,7 +720,7 @@ export function FAQ() {
                     className="w-full flex items-center justify-between p-5 md:p-6 text-left"
                   >
                     <span className="font-display text-base md:text-lg font-medium pr-4">{f.q}</span>
-                    <span className={`h-8 w-8 rounded-full border border-neutral-900/15 flex items-center justify-center flex-none transition-transform ${isOpen ? "rotate-45 bg-gradient-to-br from-[#FF6B00] to-[#E10600] border-transparent" : ""}`}>
+                    <span className={`h-8 w-8 rounded-full border border-white/15 flex items-center justify-center flex-none transition-transform ${isOpen ? "rotate-45 bg-gradient-to-br from-[#FF6B00] to-[#E10600] border-transparent" : ""}`}>
                       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 5v14" /><path d="M5 12h14" /></svg>
                     </span>
                   </button>
@@ -730,7 +730,7 @@ export function FAQ() {
                     transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
                     className="overflow-hidden"
                   >
-                    <div className="px-5 md:px-6 pb-5 md:pb-6 text-neutral-900/65 text-sm md:text-base leading-relaxed">
+                    <div className="px-5 md:px-6 pb-5 md:pb-6 text-white/65 text-sm md:text-base leading-relaxed">
                       {f.a}
                     </div>
                   </motion.div>
@@ -750,11 +750,11 @@ export function Contact() {
       <div className="absolute inset-0 bg-ambient opacity-60" />
       <div className="relative mx-auto max-w-2xl px-5 md:px-8 text-center">
         <Reveal>
-          <div className="text-[11px] uppercase tracking-[0.3em] text-neutral-900/50">Kontakt</div>
+          <div className="text-[11px] uppercase tracking-[0.3em] text-white/50">Kontakt</div>
           <h2 className="font-display mt-3 text-3xl md:text-5xl font-semibold leading-[1.05]">
             Zakažite <span className="text-gradient-primary">termin</span>.
           </h2>
-          <p className="mt-3 text-neutral-900/60 mx-auto max-w-md text-sm md:text-base">
+          <p className="mt-3 text-white/60 mx-auto max-w-md text-sm md:text-base">
             Pozovite ili pišite na Instagramu — odgovaramo brzo i dogovaramo termin po vašoj želji.
           </p>
           <div className="mt-6 flex justify-center">
@@ -764,40 +764,40 @@ export function Contact() {
 
         <Reveal>
           <div className="mt-8 grid gap-3 max-w-md mx-auto">
-            <a href={`tel:${PHONE}`} className="flex items-center gap-4 p-4 glass-panel rounded-2xl hover:bg-neutral-900/[0.05] transition text-left">
+            <a href={`tel:${PHONE}`} className="flex items-center gap-4 p-4 glass-panel rounded-2xl hover:bg-white/[0.05] transition text-left">
               <div className="h-11 w-11 rounded-xl bg-gradient-to-br from-[#FF6B00] to-[#E10600] flex items-center justify-center flex-none">
-                <Phone className="h-5 w-5 text-neutral-900" />
+                <Phone className="h-5 w-5 text-white" />
               </div>
               <div>
-                <div className="text-[10px] text-neutral-900/50 uppercase tracking-widest">Telefon</div>
+                <div className="text-[10px] text-white/50 uppercase tracking-widest">Telefon</div>
                 <div className="font-display text-base font-semibold">{PHONE_DISPLAY}</div>
               </div>
             </a>
-            <a href={INSTAGRAM} target="_blank" rel="noreferrer" className="flex items-center gap-4 p-4 glass-panel rounded-2xl hover:bg-neutral-900/[0.05] transition text-left">
+            <a href={INSTAGRAM} target="_blank" rel="noreferrer" className="flex items-center gap-4 p-4 glass-panel rounded-2xl hover:bg-white/[0.05] transition text-left">
               <div className="h-11 w-11 rounded-xl bg-gradient-to-br from-[#FF6B00] to-[#E10600] flex items-center justify-center flex-none">
-                <Instagram className="h-5 w-5 text-neutral-900" />
+                <Instagram className="h-5 w-5 text-white" />
               </div>
               <div className="min-w-0">
-                <div className="text-[10px] text-neutral-900/50 uppercase tracking-widest">Instagram</div>
+                <div className="text-[10px] text-white/50 uppercase tracking-widest">Instagram</div>
                 <div className="font-display text-sm md:text-base font-semibold truncate">{INSTAGRAM_HANDLE}</div>
               </div>
             </a>
             <div className="grid grid-cols-2 gap-3">
               <div className="flex items-center gap-3 p-3 glass-panel rounded-2xl text-left">
                 <div className="h-10 w-10 rounded-xl bg-gradient-to-br from-[#FF6B00] to-[#E10600] flex items-center justify-center flex-none">
-                  <MapPin className="h-4 w-4 text-neutral-900" />
+                  <MapPin className="h-4 w-4 text-white" />
                 </div>
                 <div className="min-w-0">
-                  <div className="text-[10px] text-neutral-900/50 uppercase tracking-widest">Lokacija</div>
+                  <div className="text-[10px] text-white/50 uppercase tracking-widest">Lokacija</div>
                   <div className="font-display text-sm font-semibold">Ruma</div>
                 </div>
               </div>
               <div className="flex items-center gap-3 p-3 glass-panel rounded-2xl text-left">
                 <div className="h-10 w-10 rounded-xl bg-gradient-to-br from-[#FF6B00] to-[#E10600] flex items-center justify-center flex-none">
-                  <Clock className="h-4 w-4 text-neutral-900" />
+                  <Clock className="h-4 w-4 text-white" />
                 </div>
                 <div className="min-w-0">
-                  <div className="text-[10px] text-neutral-900/50 uppercase tracking-widest">Vreme</div>
+                  <div className="text-[10px] text-white/50 uppercase tracking-widest">Vreme</div>
                   <div className="font-display text-sm font-semibold">Po dogovoru</div>
                 </div>
               </div>
@@ -815,7 +815,7 @@ export function Footer() {
     { label: "Galerija", to: "/galerija" },
   ];
   return (
-    <footer className="relative border-t border-neutral-900/[0.08] py-14 pb-28 md:pb-14">
+    <footer className="relative border-t border-white/[0.08] py-14 pb-28 md:pb-14">
       <div className="mx-auto max-w-7xl px-5 md:px-8 grid md:grid-cols-3 gap-10 items-start">
         <div>
           <div className="flex items-center gap-3">
@@ -824,36 +824,36 @@ export function Footer() {
             </div>
             <div>
               <div className="font-display text-base font-semibold">DP Poliranje i Pranje</div>
-              <div className="text-[11px] uppercase tracking-[0.2em] text-neutral-900/50">Ruma</div>
+              <div className="text-[11px] uppercase tracking-[0.2em] text-white/50">Ruma</div>
             </div>
           </div>
-          <p className="mt-5 text-sm text-neutral-900/55 max-w-xs">
+          <p className="mt-5 text-sm text-white/55 max-w-xs">
             Premium auto detailing studio u Rumi. Dubinsko pranje, poliranje i
             keramička zaštita za sve vrste vozila.
           </p>
         </div>
 
         <div>
-          <div className="text-[11px] uppercase tracking-[0.25em] text-neutral-900/50 mb-4">Navigacija</div>
+          <div className="text-[11px] uppercase tracking-[0.25em] text-white/50 mb-4">Navigacija</div>
           <ul className="grid grid-cols-2 gap-2 text-sm">
             {nav.map((n) => (
               <li key={n.to}>
-                <Link to={n.to} className="text-neutral-900/70 hover:text-neutral-900 transition">{n.label}</Link>
+                <Link to={n.to} className="text-white/70 hover:text-white transition">{n.label}</Link>
               </li>
             ))}
           </ul>
         </div>
 
         <div>
-          <div className="text-[11px] uppercase tracking-[0.25em] text-neutral-900/50 mb-4">Kontakt</div>
+          <div className="text-[11px] uppercase tracking-[0.25em] text-white/50 mb-4">Kontakt</div>
           <ul className="space-y-2 text-sm">
-            <li><a className="text-neutral-900/80 hover:text-neutral-900 transition" href={`tel:${PHONE}`}>{PHONE_DISPLAY}</a></li>
-            <li><a className="text-neutral-900/80 hover:text-neutral-900 transition" href={INSTAGRAM} target="_blank" rel="noreferrer">{INSTAGRAM_HANDLE}</a></li>
-            <li className="text-neutral-900/60">Ruma, Srbija</li>
+            <li><a className="text-white/80 hover:text-white transition" href={`tel:${PHONE}`}>{PHONE_DISPLAY}</a></li>
+            <li><a className="text-white/80 hover:text-white transition" href={INSTAGRAM} target="_blank" rel="noreferrer">{INSTAGRAM_HANDLE}</a></li>
+            <li className="text-white/60">Ruma, Srbija</li>
           </ul>
         </div>
       </div>
-      <div className="mt-10 pt-6 border-t border-neutral-900/[0.06] mx-auto max-w-7xl px-5 md:px-8 flex flex-wrap items-center justify-between gap-3 text-[11px] uppercase tracking-widest text-neutral-900/40">
+      <div className="mt-10 pt-6 border-t border-white/[0.06] mx-auto max-w-7xl px-5 md:px-8 flex flex-wrap items-center justify-between gap-3 text-[11px] uppercase tracking-widest text-white/40">
         <div>© {new Date().getFullYear()} DP Poliranje i Pranje Ruma. Sva prava zadržana.</div>
         <div>Premium Auto Detailing</div>
       </div>
@@ -897,18 +897,18 @@ export function Transformations() {
   const [idx, setIdx] = useState(0);
   const pair = beforeAfterPairs[idx];
   return (
-    <section id="transformacije" className="relative py-20 md:py-32 border-t border-neutral-900/[0.06]">
+    <section id="transformacije" className="relative py-20 md:py-32 border-t border-white/[0.06]">
       <div className="mx-auto max-w-7xl px-5 md:px-8">
         <Reveal>
           <div className="mb-10 md:mb-14 flex items-end justify-between gap-6 flex-wrap">
             <div className="max-w-2xl">
-              <div className="text-[11px] uppercase tracking-[0.3em] text-neutral-900/50">
+              <div className="text-[11px] uppercase tracking-[0.3em] text-white/50">
                 Pre / posle
               </div>
               <h2 className="font-display mt-3 text-4xl md:text-6xl font-semibold leading-[1.02]">
                 Prave <span className="text-gradient-primary">transformacije</span>.
               </h2>
-              <p className="mt-4 text-neutral-900/60 max-w-lg">
+              <p className="mt-4 text-white/60 max-w-lg">
                 Povucite klizač i uverite se u razliku — sedišta, motorni prostor,
                 multimedija i lak, sve obrađeno do savršenstva.
               </p>
@@ -920,8 +920,8 @@ export function Transformations() {
                   onClick={() => setIdx(i)}
                   className={`px-3.5 py-1.5 rounded-full text-xs md:text-sm border transition ${
                     i === idx
-                      ? "bg-neutral-900 text-white border-neutral-900"
-                      : "border-neutral-900/15 text-neutral-900/70 hover:text-neutral-900 hover:border-neutral-900/30"
+                      ? "bg-white text-black border-white"
+                      : "border-white/15 text-white/70 hover:text-white hover:border-white/30"
                   }`}
                   aria-label={p.label}
                 >
@@ -937,7 +937,7 @@ export function Transformations() {
         <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
           {comboImages.map((c, i) => (
             <Reveal key={c.src} delay={i * 0.05}>
-              <figure className="group relative overflow-hidden rounded-3xl border border-neutral-900/10 bg-[#FAF7F1]">
+              <figure className="group relative overflow-hidden rounded-3xl border border-white/10 bg-[#1c1712]">
                 <img
                   src={c.src}
                   alt={c.title}
@@ -960,16 +960,16 @@ export function Transformations() {
         <Reveal>
           <div className="mt-10 md:mt-14">
             <div className="mb-4 flex items-center gap-3">
-              <div className="text-[11px] uppercase tracking-[0.3em] text-neutral-900/50">
+              <div className="text-[11px] uppercase tracking-[0.3em] text-white/50">
                 Keramička zaštita i poliranje
               </div>
-              <div className="h-px flex-1 bg-neutral-900/10" />
+              <div className="h-px flex-1 bg-white/10" />
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-4">
               {ceramicShowcase.map((src, i) => (
                 <div
                   key={src}
-                  className={`overflow-hidden rounded-2xl md:rounded-3xl border border-neutral-900/10 ${
+                  className={`overflow-hidden rounded-2xl md:rounded-3xl border border-white/10 ${
                     i === 0 ? "md:col-span-2 md:row-span-1" : ""
                   }`}
                 >
